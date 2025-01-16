@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Life2Nomads</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #444;
+        }
+        header {
+            background: url('https://media.cntraveler.com/photos/5e74f9de2e6ca30009d1d4fa/16:9/w_2560%2Cc_limit/Argentina-GettyImages-1146497849.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+        }
+        .social-links a.instagram {
+            background-color: #E4405F;
+        }
+        .social-links a.youtube {
+            background-color: #FF0000;
+        }
+        .social-links a.tiktok {
+            background-color: #010101;
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life2Nomads</h1>
+        <p>Your guide to discovering the world</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#store">Store</a>
+        <a href="#plans">Plans</a>
+        <a href="#map">Travel Map</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to Life2Nomads! We are passionate explorers on a mission to share the beauty of travel with the world. Join us as we uncover hidden gems, share practical tips, and inspire others to embark on their own adventures.</p>
+        </div>
+        <div id="store" class="section">
+            <h2>Store</h2>
+            <p>Explore our exclusive travel gear and merchandise. From backpacks to travel journals, find everything you need for your next adventure!</p>
+        </div>
+        <div id="plans" class="section">
+            <h2>Plans</h2>
+            <p>Check out our upcoming travel plans and itineraries. Join us or get inspired to plan your own journey.</p>
+        </div>
+        <div id="map" class="section">
+            <h2>Travel Map</h2>
+            <p>Discover the places we have explored. Use our interactive map to find tips, photos, and stories from our travels.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/life2nomads" class="instagram" target="_blank">
+                <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+            </a>
+            <a href="https://youtube.com/@life2nomads" class="youtube" target="_blank">
+                <i class="fab fa-youtube" style="color: white; font-size: 24px;"></i>
+            </a>
+            <a href="https://tiktok.com/@life2nomads" class="tiktok" target="_blank">
+                <i class="fab fa-tiktok" style="color: white; font-size: 24px;"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
