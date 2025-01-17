@@ -15,7 +15,7 @@
         }
         header {
             background: url('img/logo.JPEG') no-repeat center center/cover;
-            height: 500px;
+            height: 50vh; /* Adjusts height relative to the viewport */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -25,16 +25,17 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
         }
         header h1 {
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
             margin: 0;
         }
         header p {
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
             margin-top: 10px;
         }
         nav {
             background-color: #333;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             padding: 10px 0;
         }
@@ -42,7 +43,7 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             transition: background-color 0.3s;
         }
@@ -58,12 +59,12 @@
             margin-bottom: 40px;
         }
         .section h2 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             margin-bottom: 10px;
             text-align: center;
         }
         .section p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             line-height: 1.6;
             text-align: center;
         }
@@ -78,14 +79,13 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             transition: transform 0.3s;
         }
-        .social-links a img {
-            width: 24px;
-            height: 24px;
+        .social-links a i {
+            font-size: 18px;
         }
         .social-links a.instagram {
             background-color: #E4405F;
@@ -99,12 +99,50 @@
         .social-links a:hover {
             transform: scale(1.1);
         }
+
+        /* Media Queries for iPhone and small devices */
+        @media (max-width: 768px) {
+            header {
+                height: 40vh;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            .section p {
+                font-size: 0.9rem;
+            }
+            .social-links a {
+                width: 30px;
+                height: 30px;
+            }
+            .social-links a i {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 35vh;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1></h1>
-        <p></p>
+        <!-- <h1>Life2Nomads</h1>
+        <p>Your gateway to adventure</p> -->
     </header>
     <nav>
         <a href="#about">About Us</a>
@@ -131,13 +169,13 @@
         </div>
         <div class="social-links">
             <a href="https://instagram.com/life2nomads" class="instagram" target="_blank">
-                <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="https://youtube.com/@life2nomads" class="youtube" target="_blank">
-                <i class="fab fa-youtube" style="color: white; font-size: 24px;"></i>
+                <i class="fab fa-youtube"></i>
             </a>
             <a href="https://tiktok.com/@life2nomads" class="tiktok" target="_blank">
-                <i class="fab fa-tiktok" style="color: white; font-size: 24px;"></i>
+                <i class="fab fa-tiktok"></i>
             </a>
         </div>
     </div>
